@@ -1,0 +1,39 @@
+<root>
+	<lms>
+		<URL>xxxx</URL>
+			<!--
+ 			- @discard.email
+ 			- @cmail.club
+ 			-->
+		<EmailDomain>@discard.email</EmailDomain>
+			<!--
+ 			- browserstack_chrome
+ 			- browserstack_firefox
+ 			- chrome
+ 			- firefox
+ 			- saucelab_chrome
+ 			-->
+		<RemoteEnvironment>chrome</RemoteEnvironment>
+			<!--
+ 			- yes
+ 			- no
+ 			-->
+		<HeadlessMode>no</HeadlessMode>
+		
+		<!--Parameters for SSH-->
+		<SSHHost>XX.XXXX.XX.2</SSHHost>
+		<SSHUser>ubuntu</SSHUser>
+		<SSHPort>XX</SSHPort>
+		
+		<!--Parameters for MYSQL-->
+		<DataBaseDriverName>com.mysql.jdbc.Driver</DataBaseDriverName>
+		<DataBase2Url>jdbc:mysql://XXXXX</DataBase2Url>
+		
+		<DatabaseUsr>XXX</DatabaseUsr>
+		<DatabasePwd>XXX</DatabasePwd>
+		<!--Parameters for ELASTIC SEARCH-->
+		<ESIp>xx.xx.xx.2</ESIp>
+		<ESPort>xx</ESPort>
+		<ESProtocal>http</ESProtocal>
+	</lms>
+</root>

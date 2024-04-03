@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression" verbose="5">
+	<groups>
+			<run>
+				<include name="Initialization" />
+				<include name="Test" />
+				<include name="Regression" />
+			</run>
+	</groups>
+	<listeners>
+        <listener class-name="functions.C_AnnotationTransformer"/>
+        <listener class-name="functions.C_TestListenerAdapter"/> 
+  	</listeners>
+	<test name="Exercise">
+		<classes>
+ 			<!--
+ 			<class name="tests.UI_Links" />
+ 			<class name="tests.Account001" />
+ 			<class name="tests.Message" />
+ 			<class name="tests.PartnerList" />
+ 			<class name="tests.Photo" />
+ 			<class name="tests.Payment" />
+ 			<class name="tests.Hello" />
+ 			<class name="tests.AWS" />
+ 			<class name="tests.test" />
+ 			-->
+ 			<class name="tests.UI_Links" />
+ 			<class name="tests.Account001" />
+ 			<class name="tests.Message" />
+ 			<class name="tests.PartnerList" />
+ 			<class name="tests.Payment" />
+ 			<class name="tests.Hello" />
+ 		</classes>
+ 	</test>
+</suite>

@@ -1,0 +1,9 @@
+<root>
+	<RadioQuestionPage1>
+		<URL>xxxx</URL>
+		<Email>xxx</Email>
+		<Password>xxx</Password>
+		<EmailDomain>discard.email</EmailDomain>
+		<RemoteEnvironment>false</RemoteEnvironment>
+	</lms>
+</root>

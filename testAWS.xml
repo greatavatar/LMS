@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression" verbose="5">
+	<groups>
+			<run>
+				<include name="Initialization" />
+				<include name="Test" />
+				<include name="Regression" />
+			</run>
+	</groups>
+	<listeners>
+		<listener class-name="functions.C_AnnotationTransformer"/>
+        <listener class-name="functions.C_TestListenerAdapter"/> 
+  	</listeners>
+	<test name="Woker AWS">
+		<classes>
+ 			<!--
+ 			<class name="tests.test" />
+ 			<class name="tests.AWS" />
+ 			-->
+			<class name="tests.AWS" />
+ 			
+ 		</classes>
+ 	</test>
+</suite>
