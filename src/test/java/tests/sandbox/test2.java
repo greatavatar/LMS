@@ -36,7 +36,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import org.json.JSONArray;
 import org.json.JSONObject;
-
+import org.json.JSONObject;
 import variables.CommandLine;
 
 
@@ -47,15 +47,18 @@ public class test2 extends tests.DefaultAnnotations
 	
 	
 	//@Test(groups = { Priority.Critical, TestSuite.Test, AppFunction.Account, Owner.xxxxxxxNguyen },invocationCount=1)
-	@Test(groups = { Priority.Critical, TestSuite.Regression, AppFunction.Account, Owner.xxxxxxxNguyen })
+	@Test(groups = { Priority.Critical1, TestSuite.Regression, AppFunction.Account, Owner.xxxxxxxNguyen })
 	//@Severity(SeverityLevel.CRITICAL)
     //@Description("Test Description: Login test with empty username and empty password.")
     //@Story("Empty username and password login test")
 
 	public void TC0022_Test() 
 	{
+		System.out.println("--------------------" + ArrayUser.get(0).getSQL_UserId());
 		ArrayList<User> ArrayUser = new ArrayList<User>();
+		System.out.println("--------------------" + ArrayUser.get(0).getSQL_UserId());
 		F_Account.DS_GetValuesOfUsers("select a.id,a.dob,b.gender, b.gender_search,b.income_from,b.income_to,b.country from fos_user a inner join user_profile b on a.id = b.user_id where a.complete_profile_2_at is not null and a.id in (26,2838)", ArrayUser);
+		System.out.println("--------------------" + ArrayUser.get(0).getSQL_UserId());
 		System.out.println("--------------------" + ArrayUser.get(0).getSQL_UserId());
 		System.out.println("--------------------" + ArrayUser.get(0).getSQL_IncomeFrom());
 		System.out.println("--------------------" + ArrayUser.get(0).getSQL_Age());
